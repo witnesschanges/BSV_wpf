@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "Nw519xHny7Zfl1R0XDsnHucH+UBVzYmiMYwv2oF7y6P0nOVooLhRA6ph1PLzulVeAHowG1ZI8BGgdESIhtO7tA==",
+  "success": true,
+  "projectFilePath": "D:\\My Code\\BSV_WPF\\BSV_wpf\\BSV_wpf.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\QIAO\\.nuget\\packages\\opencvsharp4\\4.8.0.20230708\\opencvsharp4.4.8.0.20230708.nupkg.sha512",
+    "C:\\Users\\QIAO\\.nuget\\packages\\opencvsharp4.runtime.win\\4.8.0.20230708\\opencvsharp4.runtime.win.4.8.0.20230708.nupkg.sha512",
+    "C:\\Users\\QIAO\\.nuget\\packages\\opencvsharp4.windows\\4.8.0.20230708\\opencvsharp4.windows.4.8.0.20230708.nupkg.sha512",
+    "C:\\Users\\QIAO\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\QIAO\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

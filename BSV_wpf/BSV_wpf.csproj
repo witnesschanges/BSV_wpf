@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Outputs\**" />
+    <EmbeddedResource Remove="Outputs\**" />
+    <None Remove="Outputs\**" />
+    <Page Remove="Outputs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Inputs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenCvSharp4.Windows" Version="4.8.0.20230708" />
+  </ItemGroup>
+
+</Project>
