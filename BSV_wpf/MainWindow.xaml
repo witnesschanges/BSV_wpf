@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="1280">
     <Grid>
-        <Button Click="Button_Click" Content="Circle Detect"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="540"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="540"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="480"/>
+            <RowDefinition Height="240"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Grid.Column="0"/>
+        <Image Grid.Row="0" Grid.Column="1"/>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Button Click="Button_Click" Content="Circle Detect"/>
+        </StackPanel> 
+
     </Grid>
 </Window>

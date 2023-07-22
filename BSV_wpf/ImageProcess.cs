@@ -4,7 +4,6 @@ namespace BSV_wpf
 {
     internal class ImageProcess
     {
-
         internal static void RecognizeCircle(string fileName)
         {
             Mat srcImg = new Mat(fileName);
