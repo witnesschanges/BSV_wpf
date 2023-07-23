@@ -15,7 +15,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Inputs\" />
+    <None Remove="Inputs\1.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Inputs\1.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

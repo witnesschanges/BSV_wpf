@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.IO;
+using System.Windows.Controls;
 
 namespace BSV_wpf
 {
@@ -11,6 +12,7 @@ namespace BSV_wpf
         public MainWindow()
         {
             InitializeComponent();
+            Image image = new Image();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
