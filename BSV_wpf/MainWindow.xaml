@@ -29,7 +29,7 @@
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机配置"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机标定"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="角点检测"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Click="Button_Click" Content="圆点检测"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="圆点检测" Command="{Binding RecognizeCircleCommand}"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="停止检测"/>
                     </StackPanel>
                 </Border>
@@ -46,7 +46,7 @@
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机配置"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机标定"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="角点检测"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Click="Button_Click" Content="圆点检测"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="圆点检测" Command="{Binding RecognizeCircleCommand}"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="停止检测"/>
                     </StackPanel>
                 </Border>

@@ -12,15 +12,7 @@ namespace BSV_wpf
         public MainWindow()
         {
             InitializeComponent();
-            Image image = new Image();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            string currentDir = Directory.GetCurrentDirectory();
-            var parentDir = Directory.GetParent(currentDir);
-            string inputPath = @$"{parentDir?.Parent?.Parent?.FullName}\Inputs\1.bmp";
-            ImageProcess.RecognizeCircle(inputPath);
+            DataContext = new ViewModel();
         }
     }
 }
