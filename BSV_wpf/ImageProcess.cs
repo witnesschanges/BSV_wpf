@@ -4,7 +4,7 @@ namespace BSV_wpf
 {
     internal class ImageProcess
     {
-        internal static void RecognizeCircle(string fileName)
+        internal static string RecognizeCircle(string fileName)
         {
             Mat srcImg = new Mat(fileName);
             Mat FilImg = new Mat();
@@ -51,8 +51,9 @@ namespace BSV_wpf
             string currentDir = System.IO.Directory.GetCurrentDirectory();
             string outputPath = @$"{currentDir}\1.bmp";
             bool isSaved = srcImg.SaveImage(outputPath);
-            if (isSaved)
-                Cv2.ImShow("Circle Detect", srcImg);
+            //if (isSaved)
+            //    Cv2.ImShow("Circle Detect", srcImg);
+            return outputPath;
         }
     }
 }

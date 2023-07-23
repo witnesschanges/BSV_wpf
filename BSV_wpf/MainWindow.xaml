@@ -1,4 +1,5 @@
 ﻿<Window x:Class="BSV_wpf.MainWindow"
+        x:Name="BSVWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -19,7 +20,7 @@
             </Grid.RowDefinitions>
             <StackPanel Margin="15, 10, 15, 10" Grid.Column="0" Grid.Row="0">
                 <Border BorderBrush="Black" BorderThickness="3" CornerRadius="8">
-                    <Image Source="/Inputs/1.bmp"/>
+                    <Image Source="{Binding LeftImage}"/>
                 </Border>
                 <Border Padding="3" BorderBrush="Black" Opacity="50" BorderThickness="1" CornerRadius="3"  Margin="0, 10, 0, 0">
                     <StackPanel Grid.Column="0" Orientation="Horizontal">
@@ -29,14 +30,14 @@
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机配置"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机标定"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="角点检测"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="圆点检测" Command="{Binding RecognizeCircleCommand}"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="圆点检测" Command="{Binding RecognizeCircleCommand}" CommandParameter="true"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="停止检测"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
             <StackPanel Margin="15, 10, 15, 10" Grid.Column="1" Grid.Row="0">
                 <Border BorderBrush="Black" BorderThickness="3" CornerRadius="8">
-                    <Image Source="/Inputs/1.bmp"/>
+                    <Image Source="{Binding RightImage}"/>
                 </Border>
                 <Border Padding="3" BorderBrush="Black" Opacity="50" BorderThickness="1" CornerRadius="3"  Margin="0, 10, 0, 0">
                     <StackPanel Grid.Column="0" Orientation="Horizontal">
@@ -46,7 +47,7 @@
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机配置"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机标定"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="角点检测"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="圆点检测" Command="{Binding RecognizeCircleCommand}"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="圆点检测" Command="{Binding RecognizeCircleCommand}" CommandParameter="false"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="停止检测"/>
                     </StackPanel>
                 </Border>
