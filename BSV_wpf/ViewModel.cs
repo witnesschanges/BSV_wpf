@@ -1,8 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.IO;
-using System.Windows;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
@@ -25,7 +23,7 @@ namespace BSV_wpf
             var parentDir = Directory.GetParent(currentDir);
             string inputPath = @$"{parentDir?.Parent?.Parent?.FullName}\Inputs\1.bmp";
             string outputPath = ImageProcess.RecognizeCircle(inputPath);
-            if(bool.TryParse(flag, out bool iflag))
+            if (bool.TryParse(flag, out bool iflag))
             {
                 if (iflag)
                 {
@@ -37,5 +35,44 @@ namespace BSV_wpf
                 }
             }
         }
+
+        [RelayCommand]
+        private void OpenCamera(string flag)
+        {
+
+        }
+
+        [RelayCommand]
+        private void Snapshot(string flag)
+        {
+
+        }
+
+        [RelayCommand]
+        private void SavePicture()
+        {
+
+        }
+
+        [RelayCommand]
+        private void Calibrate(string flag)
+        {
+
+        }
+
+        [RelayCommand]
+        private void SetCamera(string flag)
+        {
+
+        }
+
+        [RelayCommand]
+        private void CaputreVideo(string flag) { }
+
+        [RelayCommand]
+        private void StopDetect(string flag) { }
+
+        [RelayCommand]
+        private void RecognizeCorner(string flag) { }
     }
 }

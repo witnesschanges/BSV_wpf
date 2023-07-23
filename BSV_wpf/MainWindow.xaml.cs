@@ -1,8 +1,4 @@
-﻿using System.Windows;
-using System.IO;
-using System.Windows.Controls;
-
-namespace BSV_wpf
+﻿namespace BSV_wpf
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

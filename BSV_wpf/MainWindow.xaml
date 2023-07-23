@@ -24,14 +24,14 @@
                 </Border>
                 <Border Padding="3" BorderBrush="Black" Opacity="50" BorderThickness="1" CornerRadius="3"  Margin="0, 10, 0, 0">
                     <StackPanel Grid.Column="0" Orientation="Horizontal">
-                        <Button Width="70" Height="20" Margin="0, 0, 0, 0" Content="启动相机"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="显示图像"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="保存图像"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机配置"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机标定"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="角点检测"/>
+                        <Button Width="70" Height="20" Margin="0, 0, 0, 0" Content="启动相机" Command="{Binding OpenCameraCommand}" CommandParameter="true"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="显示图像" Command="{Binding CaputreVideoCommand}" CommandParameter="true"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="保存图像" Command="{Binding SavePictureCommand}" CommandParameter="true"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机配置" Command="{Binding SetCameraCommand}" CommandParameter="true"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机标定" Command="{Binding CalibrateCommand}" CommandParameter="true"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="角点检测" Command="{Binding RecognizeCornerCommand}" CommandParameter="true"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="圆点检测" Command="{Binding RecognizeCircleCommand}" CommandParameter="true"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="停止检测"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="停止检测" Command="{Binding StopDetectCommand}" CommandParameter="true"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
@@ -41,14 +41,14 @@
                 </Border>
                 <Border Padding="3" BorderBrush="Black" Opacity="50" BorderThickness="1" CornerRadius="3"  Margin="0, 10, 0, 0">
                     <StackPanel Grid.Column="0" Orientation="Horizontal">
-                        <Button Width="70" Height="20" Margin="0, 0, 0, 0" Content="启动相机"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="显示图像"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="保存图像"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机配置"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机标定"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="角点检测"/>
+                        <Button Width="70" Height="20" Margin="0, 0, 0, 0" Content="启动相机" Command="{Binding OpenCameraCommand}" CommandParameter="false"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="显示图像" Command="{Binding CaputreVideoCommand}" CommandParameter="false"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="保存图像" Command="{Binding SavePictureCommand}" CommandParameter="false"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机配置" Command="{Binding SetCameraCommand}" CommandParameter="false"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="相机标定" Command="{Binding CalibrateCommand}" CommandParameter="false"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="角点检测" Command="{Binding RecognizeCornerCommand}" CommandParameter="false"/>
                         <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="圆点检测" Command="{Binding RecognizeCircleCommand}" CommandParameter="false"/>
-                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="停止检测"/>
+                        <Button Width="70" Height="20" Margin="4, 0, 0, 0" Content="停止检测" Command="{Binding StopDetectCommand}" CommandParameter="false"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
